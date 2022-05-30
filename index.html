@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    body{
+      margin: 0px;
+    }
+   #navbar{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    color:white;
+    margin-bottom: 30px;
+   
+  }
+  #navbar>#nav{
+    width: 80%;
+     margin:auto;
+    display: flex;;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+ 
+  
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  #menu>div>img{
+    display: block;
+    margin: auto;
+    height: 300px;
+    border-radius: 15px;
+  }
+  #menu{
+  
+    width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  gap: 20px
+  }
+  #menu>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 30px;
+    border-radius: 30px;
+
+  }#coffee_count{
+    margin-right: 60px;
+  }
+  button{
+    padding: 10px 30px 10px 30px;
+    border:green 1px solid;
+    border-radius: 10px;
+    color: green;
+  }
+  button:hover{
+background-color: green;
+color: white;
+  }
+  
+  </style>
+  <body>
+    <div id="navbar">
+      <div id ="nav">
+        <div>Login</div>
+        <div>Signup</div>
+        <div>Products</div>
+        <a href = "bucket.html"><div>bucket</div></a>
+      </div>
+     
+      <!--Add navbar divs here-->
+      <!-- Link to bucket.html -->
+      <div id="coffee_count">
+        
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but like this "5" -->
+      </div>
+    </div>
+
+    <div id="menu">
+      <!--Show coffee list here in grid format-->
+      <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+
+
+    </div>
+  </body>
+</html>
+<script src = "./scripts/index.js">
+
+</script>
